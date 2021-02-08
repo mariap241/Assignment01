@@ -1,14 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package edu.ru.assignment01;
 
-/**
- *
- * @author mac
- */
 public class MainClass {
     
+    
+    public static void main(String [] args){
+        
+        String[] array1 = {"apples", "snow", "kitten", "cars"};
+        
+        String array2[] = new String[4];
+        
+        for (int index=0; index< array1.length; index++){
+            array2[index]=array1[index];
+        }
+      
+        for (int index=0; index< array1.length; index++){
+            array1[index]="_"+ array1[index];
+        }
+        for (String element: array1){
+            System.out.println(element);
+        }
+        for (String element: array2){
+            System.out.println(element);
+        }
+    }
 }
